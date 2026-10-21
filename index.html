@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tauseef Ahmad Awan · Full-Stack Developer</title>
+  <meta name="description" content="Full-stack developer in Aachen: Java / Spring Boot, React / TypeScript, PostgreSQL and Python data pipelines. Portfolio, projects and experience.">
+  <meta property="og:title" content="Tauseef Ahmad Awan · Full-Stack Developer">
+  <meta property="og:description" content="Java / Spring Boot, React / TypeScript, PostgreSQL and Python data pipelines. Based in Aachen, Germany.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tauseefahmad.github.io/">
+  <meta property="og:image" content="https://tauseefahmad.github.io/assets/catalog-list.jpg">
+  <meta name="theme-color" content="#0d1726">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply the saved theme before first paint to avoid a flash.
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo" aria-label="Home">
+        <span class="logo-mark">TA</span>
+        <span class="logo-name">Tauseef Ahmad Awan</span>
+      </a>
+      <nav aria-label="Sections">
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="hero-id">
+            <div class="avatar" data-avatar aria-hidden="true">
+              <svg viewBox="0 0 200 200">
+                <defs>
+                  <linearGradient id="av-core" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#1f4e79"/>
+                    <stop offset=".55" stop-color="#0f8b8d"/>
+                    <stop offset="1" stop-color="#2fb39a"/>
+                  </linearGradient>
+                  <radialGradient id="av-glow">
+                    <stop offset="0" stop-color="#3dd6c4" stop-opacity=".45"/>
+                    <stop offset="1" stop-color="#3dd6c4" stop-opacity="0"/>
+                  </radialGradient>
+                  <radialGradient id="av-shine" cx=".3" cy=".25" r=".6">
+                    <stop offset="0" stop-color="#fff" stop-opacity=".45"/>
+                    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+                <circle cx="100" cy="100" r="98" fill="url(#av-glow)" class="av-glow"/>
+                <g class="av-orbit av-orbit-1">
+                  <circle cx="100" cy="100" r="86" class="av-ring"/>
+                  <circle cx="186" cy="100" r="6" class="av-node av-node-a"/>
+                  <circle cx="14" cy="100" r="3.5" class="av-node av-node-c"/>
+                </g>
+                <g class="av-orbit av-orbit-2">
+                  <circle cx="100" cy="100" r="72" class="av-ring av-ring-dash"/>
+                  <circle cx="100" cy="28" r="5" class="av-node av-node-b"/>
+                </g>
+                <circle cx="100" cy="100" r="56" fill="url(#av-core)"/>
+                <circle cx="100" cy="100" r="56" fill="url(#av-shine)"/>
+                <text x="100" y="101" class="av-text" text-anchor="middle" dominant-baseline="central">TA</text>
+              </svg>
+            </div>
+            <div>
+              <p class="hero-name">Tauseef Ahmad Awan</p>
+              <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Open to full-stack roles · Aachen, Germany</p>
+            </div>
+          </div>
+          <h1>Full-stack developer who makes <span class="grad">data trustworthy.</span></h1>
+          <p class="lead">
+            Java&nbsp;/&nbsp;Spring Boot services and React&nbsp;/&nbsp;TypeScript front ends on top,
+            PostgreSQL and Python pipelines underneath, with tests, validation and documentation
+            that let other people rely on the result.
+          </p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#projects">See my work</a>
+            <a class="btn btn-ghost" href="mailto:tauseefahmadawan01@gmail.com">Get in touch</a>
+          </div>
+          <ul class="facts" aria-label="Quick facts">
+            <li><strong>Since 2012</strong><span>building software</span></li>
+            <li><strong>MSc Data Science</strong><span>RWTH Aachen</span></li>
+            <li><strong>EN · DE</strong><span>fluent · A2/B1</span></li>
+          </ul>
+        </div>
+
+        <div class="terminal" data-terminal aria-label="Terminal replay of the order data pipeline">
+          <div class="term-bar">
+            <span></span><span></span><span></span>
+            <p>order-data-pipeline — zsh</p>
+            <button class="term-replay" type="button" aria-label="Replay terminal">↻</button>
+          </div>
+          <pre class="term-body" aria-live="off"><code></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">01 · Selected projects</p>
+          <h2>Built in public, tested in CI.</h2>
+          <p class="section-lead">Both projects are open source, with green pipelines that run every test against a real PostgreSQL database.</p>
+        </header>
+
+        <!-- Project 1 -->
+        <article class="project reveal">
+          <div class="project-media">
+            <figure class="shot shot-back"><img src="assets/fair-report.jpg" alt="FAIR checklist for a dataset, grouped by Findable, Accessible, Interoperable and Reusable" loading="lazy" width="800" height="553"></figure>
+            <figure class="shot shot-front"><img src="assets/catalog-list.jpg" alt="Catalog list with search, filters and FAIR score badges" loading="lazy" width="800" height="553"></figure>
+          </div>
+          <div class="project-body">
+            <p class="project-tag">Full-stack · Spring Boot + React</p>
+            <h3>FAIR Data Catalog</h3>
+            <p>
+              A catalog for research datasets that scores every entry against the FAIR principles
+              and tells data stewards exactly what to fix: not just "62%", but
+              "attach an open license, e.g. CC-BY-4.0".
+            </p>
+            <ul class="bullets">
+              <li>REST API with paged search, validation and <code>problem+json</code> errors</li>
+              <li>Flyway migrations, JPA Specifications, indexes for the real query paths</li>
+              <li>JUnit 5, <code>@WebMvcTest</code> and Testcontainers against PostgreSQL 16</li>
+              <li>Docker Compose, Kubernetes manifests with probes and non-root containers</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies">
+              <li>Java 17</li><li>Spring Boot 3</li><li>PostgreSQL</li><li>React 19</li><li>TypeScript</li><li>Docker</li><li>Kubernetes</li><li>GitHub Actions</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-primary" href="https://github.com/tauseefahmad/fair-data-catalog">View code</a>
+              <a class="link-arrow" href="#fair-demo">Try the FAIR checker ↓</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Interactive FAIR demo -->
+        <div class="demo reveal" id="fair-demo">
+          <div class="demo-head">
+            <div>
+              <p class="kicker">Live demo</p>
+              <h3>Score a dataset, right here</h3>
+              <p class="muted">The same eight checks as the catalog's <code>FairnessEvaluator</code>, ported to the browser. Edit any field.</p>
+            </div>
+            <div class="demo-presets" role="group" aria-label="Example entries">
+              <button type="button" class="pill" data-preset="messy">Messy entry</button>
+              <button type="button" class="pill" data-preset="fair">FAIR entry</button>
+            </div>
+          </div>
+          <div class="demo-grid">
+            <form class="demo-form" autocomplete="off" onsubmit="return false">
+              <label>Persistent identifier <input name="identifier" placeholder="10.5072/demo.soil"></label>
+              <label>Description <textarea name="description" rows="3" placeholder="What is in the data, how was it collected?"></textarea></label>
+              <label>Keywords <input name="keywords" placeholder="soil, microbiome, sequencing"></label>
+              <label>Access URL <input name="accessUrl" placeholder="https://…"></label>
+              <div class="two">
+                <label>Format <input name="format" placeholder="text/csv"></label>
+                <label>License <input name="license" placeholder="CC-BY-4.0"></label>
+              </div>
+              <label>Creator <input name="creator" placeholder="Lab or institution"></label>
+            </form>
+            <div class="demo-result" aria-live="polite">
+              <div class="ring" data-ring>
+                <svg viewBox="0 0 120 120" aria-hidden="true">
+                  <circle class="ring-track" cx="60" cy="60" r="52"/>
+                  <circle class="ring-value" cx="60" cy="60" r="52"/>
+                </svg>
+                <div class="ring-label"><strong data-score>0</strong><span>FAIR score</span></div>
+              </div>
+              <ul class="checks" data-checks></ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <article class="project project-alt reveal">
+          <div class="project-media flow" aria-label="Pipeline flow with row counts from a real run">
+            <ol class="flow-steps">
+              <li><span class="flow-n">5,173</span><span class="flow-l">rows read</span><span class="flow-s">Extract</span></li>
+              <li class="flow-bad"><span class="flow-n">271</span><span class="flow-l">rejected, with reasons</span><span class="flow-s">Validate</span></li>
+              <li class="flow-warn"><span class="flow-n">110</span><span class="flow-l">duplicates removed</span><span class="flow-s">Clean</span></li>
+              <li class="flow-good"><span class="flow-n">4,792</span><span class="flow-l">loaded, idempotent</span><span class="flow-s">Upsert</span></li>
+            </ol>
+            <p class="flow-note">Run it twice: still 4,792 rows. Every run is logged.</p>
+          </div>
+          <div class="project-body">
+            <p class="project-tag">Data engineering · Python ETL</p>
+            <h3>Order Data Pipeline</h3>
+            <p>
+              An ETL pipeline for e-commerce order exports that rejects bad rows instead of guessing,
+              explains every rejection, and can be re-run safely because loads upsert on the natural key.
+            </p>
+            <ul class="bullets">
+              <li>pydantic validation with readable reasons per row and file line number</li>
+              <li>E-mails pseudonymised with SHA-256 (GDPR data minimisation)</li>
+              <li>Money in <code>Decimal</code> with half-up rounding, never floats</li>
+              <li>Same test suite on SQLite and PostgreSQL 16, Python 3.11–3.13</li>
+            </ul>
+            <ul class="chips" aria-label="Technologies">
+              <li>Python</li><li>pydantic</li><li>SQLAlchemy 2</li><li>PostgreSQL</li><li>pytest</li><li>ruff</li><li>GitHub Actions</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-primary" href="https://github.com/tauseefahmad/order-data-pipeline">View code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section-tint" id="experience">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">02 · Experience</p>
+          <h2>From lab exercises to production pipelines.</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="job reveal">
+            <div class="job-when">Dec 2025 – now</div>
+            <div class="job-card">
+              <h3>Freelance Software Engineer / Full-Stack Developer</h3>
+              <p class="job-where">Freelance · Germany</p>
+              <ul>
+                <li>Backend workflows, API integrations and data-processing logic built for reliability and reproducibility</li>
+                <li>Workflow automation, database validation and technical documentation for web and data-driven systems</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job-when">Mar 2025 – Nov 2025</div>
+            <div class="job-card">
+              <h3>Software Engineer</h3>
+              <p class="job-where">WilTec · Germany</p>
+              <ul>
+                <li>Backend integrations and automated processing pipelines in Python/Linux with error handling and logging</li>
+                <li>Validated SQL reporting and optimised MySQL/MariaDB and PostgreSQL queries for recurring analyses</li>
+                <li>Traced errors across data and integration layers; fixes with regression checks and reproducible validation</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job-when">Jul 2024 – Feb 2025</div>
+            <div class="job-card">
+              <h3>Software Engineer</h3>
+              <p class="job-where">University of Cologne · Germany</p>
+              <ul>
+                <li>Helped initiate a Data Hub in the iHEAD profile-building initiative</li>
+                <li>ETL pipelines and curated datasets for a multi-institutional research platform</li>
+                <li>Faster database workloads through indexing, query optimisation and data modelling</li>
+                <li>Ran courses on the FAIR principles and Data Arcs; worked with CEPLAS data managers</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job-when">Apr 2022 – Mar 2024</div>
+            <div class="job-card">
+              <h3>Working Student, Software Development</h3>
+              <p class="job-where">Aradex AG · Germany</p>
+              <ul>
+                <li>REST services with Java, Spring Boot, Vert.x and OpenAPI; refactoring, reviews, documentation</li>
+                <li>PostgreSQL/MySQL features: schema changes, SQL tuning, data-validation logic</li>
+                <li>Git reviews, Docker/Kubernetes workflows, API validation and regression testing</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job reveal">
+            <div class="job-when">Feb 2022 – Mar 2022</div>
+            <div class="job-card">
+              <h3>Working Student, Cloud Engineering</h3>
+              <p class="job-where">URGROW GmbH · Germany</p>
+              <ul>
+                <li>Containerised identity and security services with Docker; runbooks for setup and operation</li>
+              </ul>
+            </div>
+          </li>
+          <li class="job job-earlier reveal">
+            <div class="job-when">2012 – 2018</div>
+            <div class="job-card">
+              <h3>Earlier: developer, consultant and lecturer</h3>
+              <p class="job-where">Pakistan</p>
+              <ul>
+                <li><strong>Lecturer &amp; Lab Instructor</strong>, Government College of Science / FAST NUCES: database systems and web engineering</li>
+                <li><strong>Software Developer &amp; Technical Consultant</strong>, Rozi Food Industries: business apps and SQL reporting</li>
+                <li><strong>Junior Data &amp; Software Engineer</strong>, SolutionInn: data-oriented backends, crawlers, relational databases</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="kicker">03 · Skills</p>
+          <h2>The toolbox.</h2>
+          <p class="section-lead"><span class="proof-dot" aria-hidden="true"></span> marks skills you can check in my public code.</p>
+        </header>
+        <div class="skills">
+          <div class="skill-group reveal">
+            <h3>Backend</h3>
+            <ul class="chips"><li class="proof">Java</li><li class="proof">Spring Boot</li><li class="proof">Python</li><li class="proof">REST APIs</li><li class="proof">OpenAPI</li><li>Vert.x</li><li>PHP</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Frontend</h3>
+            <ul class="chips"><li class="proof">TypeScript</li><li class="proof">React</li><li class="proof">JavaScript</li><li class="proof">HTML &amp; CSS</li><li>Responsive UI</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Data</h3>
+            <ul class="chips"><li class="proof">PostgreSQL</li><li>MySQL / MariaDB</li><li class="proof">SQL optimisation</li><li class="proof">Data modelling</li><li class="proof">ETL &amp; validation</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>DevOps</h3>
+            <ul class="chips"><li class="proof">Docker</li><li class="proof">Kubernetes</li><li class="proof">GitHub Actions</li><li>GitLab CI/CD</li><li class="proof">Git</li><li>Linux</li><li class="proof">Runbooks</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Quality</h3>
+            <ul class="chips"><li class="proof">JUnit 5</li><li class="proof">Testcontainers</li><li class="proof">pytest</li><li>API &amp; regression testing</li><li>Code reviews</li></ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Education</h3>
+            <ul class="edu">
+              <li><strong>MSc Data Science</strong> · RWTH Aachen University, 2019–2023<br><span class="muted">Thesis: intensive care databases and transferability of AI methods for ARDS detection</span></li>
+              <li><strong>MSc Computer Science</strong> · FAST NUCES, 2013–2016</li>
+              <li><strong>BSc Computer Science</strong> · FAST NUCES, 2008–2012</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-inner reveal">
+        <p class="kicker">04 · Contact</p>
+        <h2>Let's build something reliable.</h2>
+        <p class="section-lead">I'm looking for full-stack and backend roles. The fastest way to reach me is e-mail.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary btn-lg" href="mailto:tauseefahmadawan01@gmail.com">tauseefahmadawan01@gmail.com</a>
+          <button class="btn btn-ghost btn-lg" type="button" data-copy="tauseefahmadawan01@gmail.com">Copy e-mail</button>
+        </div>
+        <ul class="socials">
+          <li><a href="https://www.linkedin.com/in/tauseef-ahmad-awan-1139772b2">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg>LinkedIn</a></li>
+          <li><a href="https://github.com/tauseefahmad">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 8.4 22.9c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>GitHub</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Tauseef Ahmad Awan · Aachen</p>
+      <p class="muted">Hand-built HTML, CSS and JavaScript. No cookies, no tracking, no third-party requests.</p>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="main.js" defer></script>
+</body>
+</html>
